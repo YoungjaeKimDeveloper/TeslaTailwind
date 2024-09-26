@@ -31,6 +31,18 @@ html {
 .emphasize-text {
   @apply underline tracking-wider uppercase;
 }
+.buttons {
+  @apply absolute top-[80%] left-[50%];
+}
+.button {
+  @apply bg-white px-[10rem] py-4 rounded-[10rem] uppercase text-2xl opacity-50;
+}
+.white {
+  @apply mr-2;
+}
+.black {
+  @apply bg-black text-white ml-2;
+}
 .transform_50 {
   transform: translate(-50%, -50%);
 }
