@@ -23,7 +23,7 @@ html {
   @apply absolute top-[20%] left-[50%] text-center;
 }
 .car-description-header {
-  @apply text-9xl font-semibold;
+  @apply font-semibold mb-[2rem] sm:text-6xl lg:text-9xl;
 }
 .car-description-subtitle {
   @apply text-2xl text-gray-800;
@@ -32,17 +32,21 @@ html {
   @apply underline tracking-wider uppercase;
 }
 .buttons {
-  @apply absolute top-[80%] left-[50%];
+  @apply absolute top-[80%] left-[50%] flex flex-col lg:flex-row;
 }
 .button {
   @apply bg-white px-[10rem] py-4 rounded-[10rem] uppercase text-2xl opacity-50;
 }
 .white {
-  @apply mr-2;
+  @apply lg:mr-2;
 }
 .black {
-  @apply bg-black text-white ml-2;
+  @apply bg-black text-white lg:ml-2;
 }
+.down-btn {
+  @apply w-[5rem] absolute bottom-[20px] left-[50%] cursor-pointer animate-bounce;
+}
+/* Normal CSS */
 .transform_50 {
   transform: translate(-50%, -50%);
 }
