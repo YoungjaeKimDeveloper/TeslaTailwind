@@ -8,8 +8,29 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 .header {
-  @apply flex items-center justify-between w-full fixed z-10 h-[5.4rem] p-[3.2rem] bg-red-100;
+  @apply flex items-center justify-between w-full fixed z-10 h-[5.4rem] p-[3.2rem] !bg-transparent;
 }
 .nav-link {
   @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 transition-all duration-1000;
+}
+.card_section {
+  @apply w-screen h-screen relative;
+}
+.car-img {
+  @apply w-full h-full object-cover;
+}
+.car-description {
+  @apply absolute top-[20%] left-[50%] text-center;
+}
+.car-description-header {
+  @apply text-9xl font-semibold;
+}
+.car-description-subtitle {
+  @apply text-2xl text-gray-800;
+}
+.emphasize-text {
+  @apply underline tracking-wider uppercase;
+}
+.transform_50 {
+  transform: translate(-50%, -50%);
 }
